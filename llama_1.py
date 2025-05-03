@@ -1,3 +1,4 @@
+import os
 import pygame
 import sys
 
@@ -16,7 +17,8 @@ grey = (166, 166, 166)
 cream_white = (252, 245, 210)
 
 # Fonts to be used in game
-score_font = pygame.font.SysFont('assets/Press_Start_2P/PressStart2P-Regular.ttf', 50)
+score_font_path = os.path.join("assets", "Press_Start_2P", "PressStart2P-Regular.ttf")
+score_font = pygame.font.SysFont(score_font_path, 50)
 exit_font = pygame.font.SysFont("freesansbold.ttf", 40)
 
 
